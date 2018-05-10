@@ -207,7 +207,7 @@ module.exports = function (req, res) {
     return res.sendError({ status: 'incomplete data set' });
   }
 
-  var newEvent = new Event();
+  var newEvent = new Event.model();
   Event.updateItem(newEvent, req.body);
 
 };
